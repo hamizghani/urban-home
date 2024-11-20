@@ -9,3 +9,13 @@
     flex-shrink: 0;
     background-color: #F5F5F5;;
 }
+
+.logo-text {
+    display: flex;
+    width: 208.054px;
+    height: 36.667px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: "Inter";
+}
