@@ -5,11 +5,12 @@
 
 .navbar {
     display: flex;
-    width: 1440px;
-    height: 80px;
+    align-items: center;
+    max-width: 100%;
+    height: fit-content;
     flex-shrink: 0;
     background-color: #F5F5F5;
-    padding-top: 20px;
+    padding: 20px 10px;
 }
 
 .logo-container {
@@ -20,8 +21,6 @@
     width: fit-content;
     .logo-text {
         display: flex;
-        width: 208.054px;
-        height: 20px;
         flex-direction: column;
         justify-content: center;
         flex-shrink: 0;
@@ -45,11 +44,100 @@
 }
 
 .product-category {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;    
+    font-weight: 100;
     a {
         text-decoration: none;
         h1 {
             color: #9E6D00;
+            font-size: 16px;
+            font-family: "Nunito";
         }
     }
 }
+
+.search-bar {
+    display: flex;
+    padding: 2px 5px;
+    margin-left: 80px;
+    border-radius: 10px;
+    width: 400px;
+    align-items: center;
+    border: 2px dotted rgb(104, 104, 104);
+    height: fit-content;
+    input {
+        height: 25px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        margin-right: 5px;
+    }
+    button {
+        width: fit-content;
+        display: flex;
+        padding: 4px 10px;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        border-radius: 10px;
+        background-color:  #D39817;
+        border: 0px;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: #9E6D00;
+        
+    }
+    input:focus {
+        outline: none; /* Remove the outline that appears on focus */
+        border: none; /* Keep the border none when active */
+    }
+    
+    input::placeholder {
+        text-align: right; /* Align placeholder text to the right */
+        color: #888; /* Optional: Placeholder text color for better visibility */
+    }
+}
+
+.cart {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.user-button {
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    button {
+        height: 40px;
+        font-size: 18px;
+        padding: 2px 25px;
+        border-radius: 10px;
+    }
+    .loginButton {
+        border: 1px solid #D39817;
+        color: #D39817;
+    }
+    .loginButton:hover {
+        border: 1px solid #D39817;
+        color: #FFF;
+        background: #D39817;
+        cursor: pointer;
+    }
+    .signupButton {
+        border: 1px solid #D39817;
+        color: #FFF;
+        background: #D39817;
+    }
+    .signupButton:hover {
+        border: 1px solid #D39817;
+        background-color: #FFF;
+        color: #D39817;
+        cursor: pointer;
+    }
+}  
 
